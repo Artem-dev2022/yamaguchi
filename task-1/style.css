@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'Bebas';
+    src: url('./font/BebasNeueBold.woff2') format('woff2');
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+.container {
+    margin: 20px auto 0 auto;
+    width: 1680px;
+    display: flex;
+}
+.container__left {
+    margin-right: 100px;
+    position: relative;
+    width: 870px;
+}
+.container__img {
+    position: absolute;
+    left: 14px;
+}
+.container__img--upper {
+    top: 63px;
+    z-index: 2;
+    transition: all 0.2s;
+}
+.container__img--lower {
+    top: 473px;
+    z-index: 1;
+}
+.move {
+    top: 157px;
+}
+.container__buttons {
+    position: absolute;
+    top: 450px;
+    left: 215px;
+    z-index: 3;
+    display: flex;
+    gap: 74px;
+}
+.container__btn {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #A6FFFF;
+    border: none;
+    cursor: pointer;
+    color: #000;
+    font-size: 40px;
+}
+.container__right {
+    padding-top: 5px;
+}
+.container__title {
+    margin-bottom: 40px;
+    width: 580px;
+    color: #0B64FE;
+    font-size: 62px;
+    line-height: 100%;
+}
+.container__text {
+    width: 506px;
+    color: #181818;
+    font-size: 22px;
+    line-height: 170%; 
+}
+.container__text:nth-child(2){
+    margin-bottom: 40px;
+}
+@media (max-width: 1680px) {
+    .container {
+        position: relative;
+        margin: 14px auto 0 auto;
+        width: 296px;
+        display: flex;
+    }
+    .container__right {
+        padding-top: 0px;
+    }
+    .container__left {
+        position: absolute;
+        top: 420px;
+        left: 0;
+        margin: 0;
+        width: 100%;
+        height: 320px;
+    }
+    .container__img {
+        position: absolute;
+        left: 0px;
+        width: 290px;
+    }
+    .container__img--upper {
+        top: 20px;
+    }
+    .container__img--lower {
+        top: 160px;
+    }
+    .move {
+        top: 53px;
+    }
+    .container__buttons {
+        position: absolute;
+        top: 150px;
+        left: 65px;
+        display: flex;
+        gap: 23px;
+    }
+    .container__btn {
+        width: 60px;
+        height: 60px;
+        font-size: 12px;
+    }
+    .container__title {
+        font-family: 'Bebas';
+        margin-bottom: 20px;
+        width: 222px;
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 100%;
+    }
+    .container__text {
+        width: 100%;
+        font-size: 16px;
+    }
+    .container__text:nth-child(2){
+        margin-bottom: 362px;
+    }
+}
